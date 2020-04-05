@@ -1,0 +1,27 @@
+{% extends 'base.html '%}
+
+{%block title %}
+    <title>Posts - Python Server Side Script Website</title>
+{% endblock %}
+
+{% block body %}
+    {% if status %}
+    <small style="color: yellow;">
+        {{ status }}
+    </small>
+    <br><br>
+    {% endif %}
+    <h2>Blog Posts</h2>
+    <hr>
+    <h2>Add Blog Post:</h2>
+    <form action="/posts" method="POST">
+        Title: <input type="text" name="title" id="title">
+        <br><br>
+        Author: <input type="text" name="author" id="author">
+        <br><br>
+        Post: <textarea name="content" id="content" rows="10" cols="50"></textarea>
+        <br><br>
+        <input type="submit" value="Post">
+    </form>
+    <hr> 
+{% endblock %}

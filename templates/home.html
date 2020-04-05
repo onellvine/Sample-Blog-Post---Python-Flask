@@ -1,0 +1,20 @@
+{% extends 'base.html '%}
+
+{%block title %}
+    <title>Home - Python Server Side Script Website</title>
+{% endblock %}
+
+{% block body %}
+    {% for post in posts %}
+    <h2>{{ post[1]}}</h2>
+
+    <small><i><b>Author: {{post[2]}}</b> on {{post[4]}}</i></small>
+
+    <p style="white-space: pre;">{{ post[3] }}</p>
+    {% if show_hidden %}
+        <a href="/posts/delete/{{post[0]}}" style="border-right: 1px solid black;">Delete   </a>
+        <a href="/posts/edit/{{post[0]}}" style="margin-left: 10px;"> Edit</a>
+    {% endif %}
+    <hr>
+    {% endfor %}
+{% endblock %}

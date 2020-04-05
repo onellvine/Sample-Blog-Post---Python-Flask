@@ -1,0 +1,19 @@
+{% extends 'base.html '%}
+
+{%block title %}
+    <title>Register - Python Server Side Script Website</title>
+{% endblock %}
+
+{% block body %}
+    {% if status %}
+        <small style="color: yellow;">
+            {{ status }}
+        </small>
+        <br><br>
+    {% endif %}
+    <form action="/signin" method="post" style="margin-top: 10%;">
+        username: <input type="text" name="username" id="username"><br><br>
+        password: <input type="password" name="password" id="password"><br><br>
+        <input type="submit" value="Sign In">
+    </form>
+{% endblock %}
