@@ -22,9 +22,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
                 </li>
+                {% if show_hidden %}
                 <li class="nav-item">
                     <a class="nav-link" href="/posts">Posts <span class="sr-only">(current)</span></a>
-                </li>                
+                </li> 
+                {% endif %}
                 <li class="nav-item">
                     <a class="nav-link" href="/signin">Sign In</a>
                 </li>
