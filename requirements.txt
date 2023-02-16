@@ -128,7 +128,7 @@ validators==0.14.2
 watchdog==0.10.2
 wcwidth==0.1.9
 webencodings==0.5.1
-Werkzeug==1.0.0
+Werkzeug==2.2.3
 whitenoise==5.0.1
 widgetsnbextension==3.5.1
 wrapt==1.11.2
